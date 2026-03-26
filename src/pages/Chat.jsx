@@ -74,6 +74,9 @@ export default function Chat() {
 
     const onMessage = useCallback((message) => {
         setMessages(prevMessages => [...prevMessages, message])
+
+        const chatExists = chats.some((chat) => chat.id == chatid)
+        fetchChats()
     }, [setMessages])
 
     const { sendMessage } = useWebSocket(chatid, token, onMessage)
