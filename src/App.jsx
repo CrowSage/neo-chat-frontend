@@ -6,8 +6,8 @@ import Search from "./pages/Search"
 import Chat from "./pages/Chat"
 
 
-export const BASE_URL = "https://web-production-d2f1fe.up.railway.app/"
-export const WS_BASE_URL = "wss://web-production-d2f1fe.up.railway.app/";
+export const BASE_URL = "https://web-production-d2f1fe.up.railway.app"
+export const WS_BASE_URL = "wss://web-production-d2f1fe.up.railway.app";
 
 
 export default function App() {

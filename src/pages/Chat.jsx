@@ -26,6 +26,7 @@ export default function Chat() {
     if (!token) {
         navigate("/login")
     }
+
     const filteredChat = chats ? chats.filter((chat) => chat.name.toLowerCase().includes(searchInput.toLowerCase())) : []
 
     async function fetchUser() {
